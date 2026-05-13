@@ -1,11 +1,8 @@
 name: DingTalk Alert
 
 on:
-  workflow_run:
-    workflows:
-      - "Uptime CI"
-    types:
-      - completed
+  issues:
+    types: [opened]
 
 jobs:
   notify:
@@ -15,11 +12,11 @@ jobs:
       - name: Send DingTalk Notification
         run: |
           curl "${{ secrets.NOTIFICATION_URL }}" \
-          -H "Content-Type: application/json" \
-          -d '{
-            "msgtype": "markdown",
-            "markdown": {
-              "title": "Upptime Alert",
-              "text": "## 🚨 Upptime 监控告警-test\n请查看 GitHub Issues 获取详情"
-            }
-          }'
+            -H "Content-Type: application/json" \
+            -d '{
+              "msgtype": "markdown",
+              "markdown": {
+                "title": "Upptime Alert",
+                "text": "## 🚨 Upptime 监控告警\n\n- Title: ${{ github.event.issue.title }}\n- URL: ${{ github.event.issue.html_url }}\n- Time: '"$(date '+%Y-%m-%d %H:%M:%S')"'
+              }
+            }'
