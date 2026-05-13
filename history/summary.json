@@ -1,22 +1,22 @@
 [
   {
     "name": "Aquagem - test",
-    "url": "https://www.aquagem.com/test",
+    "url": "https://www.aquagem.com",
     "icon": "https://icons.duckduckgo.com/ip3/www.aquagem.com.ico",
     "slug": "aquagem-test",
-    "status": "down",
-    "uptime": "89.23%",
-    "uptimeDay": "89.23%",
-    "uptimeWeek": "89.23%",
-    "uptimeMonth": "89.23%",
-    "uptimeYear": "89.23%",
-    "time": 1064,
-    "timeDay": 1064,
-    "timeWeek": 1064,
-    "timeMonth": 1064,
-    "timeYear": 1064,
+    "status": "up",
+    "uptime": "62.70%",
+    "uptimeDay": "62.70%",
+    "uptimeWeek": "62.70%",
+    "uptimeMonth": "62.70%",
+    "uptimeYear": "62.70%",
+    "time": 1055,
+    "timeDay": 1055,
+    "timeWeek": 1055,
+    "timeMonth": 1055,
+    "timeYear": 1055,
     "dailyMinutesDown": {
-      "2026-05-13": 3
+      "2026-05-13": 16
     }
   },
   {
@@ -30,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 814,
-    "timeDay": 814,
-    "timeWeek": 814,
-    "timeMonth": 814,
-    "timeYear": 814,
+    "time": 837,
+    "timeDay": 837,
+    "timeWeek": 837,
+    "timeMonth": 837,
+    "timeYear": 837,
     "dailyMinutesDown": {}
   },
   {
@@ -48,11 +48,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 20922,
-    "timeDay": 20922,
-    "timeWeek": 20922,
-    "timeMonth": 20922,
-    "timeYear": 20922,
+    "time": 19137,
+    "timeDay": 19137,
+    "timeWeek": 19137,
+    "timeMonth": 19137,
+    "timeYear": 19137,
     "dailyMinutesDown": {}
   }
 ]
