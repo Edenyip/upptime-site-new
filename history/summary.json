@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.aquagem.com.ico",
     "slug": "aquagem-test",
     "status": "up",
-    "uptime": "53.03%",
-    "uptimeDay": "53.03%",
-    "uptimeWeek": "53.03%",
-    "uptimeMonth": "53.03%",
-    "uptimeYear": "53.03%",
+    "uptime": "53.09%",
+    "uptimeDay": "53.09%",
+    "uptimeWeek": "53.09%",
+    "uptimeMonth": "53.09%",
+    "uptimeYear": "53.09%",
     "time": 1020,
     "timeDay": 1020,
     "timeWeek": 1020,
@@ -25,18 +25,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.aquark.com.ico",
     "slug": "aquark-test",
     "status": "down",
-    "uptime": "62.06%",
-    "uptimeDay": "62.06%",
-    "uptimeWeek": "62.06%",
-    "uptimeMonth": "62.06%",
-    "uptimeYear": "62.06%",
+    "uptime": "61.98%",
+    "uptimeDay": "61.98%",
+    "uptimeWeek": "61.98%",
+    "uptimeMonth": "61.98%",
+    "uptimeYear": "61.98%",
     "time": 794,
     "timeDay": 794,
     "timeWeek": 794,
     "timeMonth": 794,
     "timeYear": 794,
     "dailyMinutesDown": {
-      "2026-05-13": 30
+      "2026-05-13": 31
     }
   },
   {
@@ -63,18 +63,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/this-domain-does-not-exist-123456.com.ico",
     "slug": "baidu11-test",
     "status": "down",
-    "uptime": "44.24%",
-    "uptimeDay": "44.24%",
-    "uptimeWeek": "44.24%",
-    "uptimeMonth": "44.24%",
-    "uptimeYear": "44.24%",
+    "uptime": "38.89%",
+    "uptimeDay": "38.89%",
+    "uptimeWeek": "38.89%",
+    "uptimeMonth": "38.89%",
+    "uptimeYear": "38.89%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-05-13": 0
+      "2026-05-13": 1
     }
   },
   {
@@ -83,16 +83,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/this-domain-does-not-exist-sdf23.com.ico",
     "slug": "baidu1221-test",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "68.28%",
+    "uptimeDay": "68.28%",
+    "uptimeWeek": "68.28%",
+    "uptimeMonth": "68.28%",
+    "uptimeYear": "68.28%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-05-13": 0
+    }
   }
 ]
