@@ -9,6 +9,8 @@ sites:
     url: https://www.aquark.com/test
   - name: Baidu - test
     url: https://baidu.com
+    - name: Baidu11 - test
+    url: https://this-domain-does-not-exist-123456.com
 
 notifications:
   - type: dingtalk
