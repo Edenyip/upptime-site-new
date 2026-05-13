@@ -1,22 +1,29 @@
 name: DingTalk Alert
 
 on:
-  issues:
-    types: [opened]
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 jobs:
   notify:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send DingTalk Notification
+      - name: Check latest issues and send alert
         run: |
+          ISSUES=$(curl -s \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues?state=open\&per_page=5)
+
+          echo "$ISSUES" | grep -q "is down" || exit 0
+
           curl "${{ secrets.NOTIFICATION_URL }}" \
             -H "Content-Type: application/json" \
             -d '{
               "msgtype": "markdown",
               "markdown": {
                 "title": "Upptime Alert",
-                "text": "## 🚨 Upptime 监控告警\n\n- Title: ${{ github.event.issue.title }}\n- URL: ${{ github.event.issue.html_url }}\n- Time: '"$(date '+%Y-%m-%d %H:%M:%S')"'
+                "text": "## 🚨 监控告警\n\n检测到站点异常，请查看 GitHub Issues"
               }
             }'
