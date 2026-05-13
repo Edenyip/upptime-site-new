@@ -3,7 +3,7 @@ name: DingTalk Alert
 on:
   workflow_run:
     workflows:
-      - Uptime CI
+      - "Uptime CI"
     types:
       - completed
 
