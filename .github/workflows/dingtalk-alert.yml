@@ -24,6 +24,6 @@ jobs:
               "msgtype": "markdown",
               "markdown": {
                 "title": "Upptime Alert",
-                "text": "## 🚨 监控告警\n\n检测到站点异常，请查看 GitHub Issues"
+                "text": "## 🚨 监控告警-test\n\n检测到站点异常，请查看 GitHub Issues"
               }
             }'
