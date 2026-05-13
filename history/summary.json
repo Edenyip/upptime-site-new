@@ -1,100 +1,20 @@
 [
   {
-    "name": "Aquagem - test",
-    "url": "https://www.aquagem.com",
-    "icon": "https://icons.duckduckgo.com/ip3/www.aquagem.com.ico",
-    "slug": "aquagem-test",
-    "status": "up",
-    "uptime": "21.62%",
-    "uptimeDay": "21.62%",
-    "uptimeWeek": "21.62%",
-    "uptimeMonth": "21.62%",
-    "uptimeYear": "21.62%",
-    "time": 969,
-    "timeDay": 969,
-    "timeWeek": 969,
-    "timeMonth": 969,
-    "timeYear": 969,
-    "dailyMinutesDown": {
-      "2026-05-13": 172
-    }
-  },
-  {
-    "name": "Aquark - test",
-    "url": "https://www.aquark.com/test",
-    "icon": "https://icons.duckduckgo.com/ip3/www.aquark.com.ico",
-    "slug": "aquark-test",
-    "status": "down",
-    "uptime": "35.74%",
-    "uptimeDay": "35.74%",
-    "uptimeWeek": "35.74%",
-    "uptimeMonth": "35.74%",
-    "uptimeYear": "35.74%",
-    "time": 819,
-    "timeDay": 819,
-    "timeWeek": 819,
-    "timeMonth": 819,
-    "timeYear": 819,
-    "dailyMinutesDown": {
-      "2026-05-13": 141
-    }
-  },
-  {
-    "name": "Baidu - test",
-    "url": "https://baidu.com",
-    "icon": "https://icons.duckduckgo.com/ip3/baidu.com.ico",
-    "slug": "baidu-test",
+    "name": "github - test",
+    "url": "https://www.github.com",
+    "icon": "https://icons.duckduckgo.com/ip3/www.github.com.ico",
+    "slug": "github-test",
     "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 9954,
-    "timeDay": 9954,
-    "timeWeek": 9954,
-    "timeMonth": 9954,
-    "timeYear": 9954,
+    "time": 97,
+    "timeDay": 97,
+    "timeWeek": 97,
+    "timeMonth": 97,
+    "timeYear": 97,
     "dailyMinutesDown": {}
-  },
-  {
-    "name": "Baidu11 - test",
-    "url": "https://this-domain-does-not-exist-123456.com",
-    "icon": "https://icons.duckduckgo.com/ip3/this-domain-does-not-exist-123456.com.ico",
-    "slug": "baidu11-test",
-    "status": "down",
-    "uptime": "0.26%",
-    "uptimeDay": "0.26%",
-    "uptimeWeek": "0.26%",
-    "uptimeMonth": "0.26%",
-    "uptimeYear": "0.26%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-05-13": 139
-    }
-  },
-  {
-    "name": "Baidu1221 - test",
-    "url": "https://this-domain-does-not-exist-sdf23.com",
-    "icon": "https://icons.duckduckgo.com/ip3/this-domain-does-not-exist-sdf23.com.ico",
-    "slug": "baidu1221-test",
-    "status": "down",
-    "uptime": "0.25%",
-    "uptimeDay": "0.25%",
-    "uptimeWeek": "0.25%",
-    "uptimeMonth": "0.25%",
-    "uptimeYear": "0.25%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-05-13": 139
-    }
   }
 ]
