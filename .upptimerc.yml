@@ -6,7 +6,7 @@ sites:
   - name: Aquagem - test
     url: https://www.aquagem.com/test
   - name: Aquark - test
-    url: https://www.aquark.com/test
+    url: https://www.aquark.com
   - name: Baidu - test
     url: https://baidu.com
   - name: Baidu11 - test
