@@ -1,29 +1,45 @@
-name: DingTalk Alert
+name: DingTalk Alert (Multi-Site)
 
 on:
   schedule:
     - cron: "*/5 * * * *"
-  workflow_dispatch:
 
 jobs:
   notify:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check latest issues and send alert
+      - name: Collect Upptime issues
+        id: collect
         run: |
           ISSUES=$(curl -s \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/issues?state=open\&per_page=5)
+            https://api.github.com/repos/${{ github.repository }}/issues?state=open\&per_page=10)
 
-          echo "$ISSUES" | grep -q "is down" || exit 0
+          REPORT=$(echo "$ISSUES" | jq -r '
+            map(select(.title | test("is down"))) |
+            .[] |
+            "- 站点：" + .title + "\n  链接：" + .html_url
+          ')
 
+          if [ -z "$REPORT" ]; then
+            echo "alert=false" >> $GITHUB_OUTPUT
+          else
+            echo "alert=true" >> $GITHUB_OUTPUT
+            echo "report<<EOF" >> $GITHUB_OUTPUT
+            echo "$REPORT" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send DingTalk Alert
+        if: steps.collect.outputs.alert == 'true'
+        run: |
           curl "${{ secrets.NOTIFICATION_URL }}" \
             -H "Content-Type: application/json" \
             -d '{
               "msgtype": "markdown",
               "markdown": {
-                "title": "Upptime Alert",
-                "text": "## 🚨 监控告警-test\n\n检测到站点异常，请查看 GitHub Issues"
+                "title": "🚨 Upptime 多站点告警test",
+                "text": "## 🚨 监控告警-test\n\n${{ steps.collect.outputs.report }}"
               }
             }'
