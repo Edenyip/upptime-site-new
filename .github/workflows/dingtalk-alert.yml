@@ -28,7 +28,7 @@ jobs:
 
       - name: Send DingTalk Notification
         run: |
-          curl "${{ secrets.DINGTALK_WEBHOOK }}" \
+          curl "${{ secrets.NOTIFICATION_URL }}" \
           -H "Content-Type: application/json" \
           -d "{
             \"msgtype\": \"markdown\",
