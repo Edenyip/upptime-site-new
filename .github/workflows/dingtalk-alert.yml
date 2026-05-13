@@ -2,44 +2,25 @@
 name: DingTalk Alert
 
 on:
-  issues:
-    types: [opened, edited]
+  workflow_run:
+    workflows:
+      - Uptime CI
+    types:
+      - completed
 
 jobs:
   notify:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Detect Incident Status
-        id: status
-        run: |
-          TITLE="${{ github.event.issue.title }}"
-          BODY="${{ github.event.issue.body }}"
-
-          echo "TITLE=$TITLE" >> $GITHUB_ENV
-
-          if [[ "$TITLE" == *"🟩"* ]]; then
-            echo "STATUS=RECOVERED" >> $GITHUB_ENV
-            echo "STATUS_TEXT=站点已恢复" >> $GITHUB_ENV
-          else
-            echo "STATUS=DOWN" >> $GITHUB_ENV
-            echo "STATUS_TEXT=站点故障" >> $GITHUB_ENV
-          fi
-
       - name: Send DingTalk Notification
         run: |
           curl "${{ secrets.NOTIFICATION_URL }}" \
           -H "Content-Type: application/json" \
-          -d "{
-            \"msgtype\": \"markdown\",
-            \"markdown\": {
-              \"title\": \"Upptime 监控通知\",
-              \"text\": \"## 🚨 Upptime 监控通知\n
-              > 状态：${STATUS_TEXT}\n
-              > 标题：${TITLE}\n
-              > 时间：$(date '+%Y-%m-%d %H:%M:%S') UTC\n
-              > 仓库：${{ github.repository }}\n
-              > Issue：https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}\"
+          -d '{
+            "msgtype": "markdown",
+            "markdown": {
+              "title": "Upptime Alert",
+              "text": "## 🚨 Upptime 监控告警\n请查看 GitHub Issues 获取详情"
             }
-          }"
-```
+          }'
