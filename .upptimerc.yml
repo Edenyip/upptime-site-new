@@ -3,8 +3,16 @@ owner: Edenyip # Your GitHub organization or username, where this repository liv
 repo: upptime-site-new # The name of this repository
 
 sites:
-  - name: github - test
-    url: https://www.github.com
+  - name: Igarden.ai - test
+    url: https://www.igarden.ai
+  - name: Fairlandgroup - test
+    url: https://www.fairlandgroup.com
+  - name: Fairland - test
+    url: https://www.fairland.com.cn
+  - name: Aquark - test
+    url: https://www.aquark.com
+  - name: Aquagem - test
+    url: https://www.aquagem.com
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -12,14 +20,12 @@ status-website:
 
   baseUrl: /upptime-site-new
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Test-new
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: 监控网站状态
+  introTitle: "**自定义监控网站状态** 快速定位网站是否宕机."
+  introMessage: 技术支持Eden
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
