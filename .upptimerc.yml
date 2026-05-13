@@ -14,6 +14,11 @@ notifications:
   - type: dingtalk
     baseUrl: "$NOTIFICATION_URL"
 
+i18n:
+  activeIncidents: "活动告警 (test)"
+  allSystemsOperational: "所有系统运行正常 (test)"
+  incidentReport: "故障报告 (test)"
+
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
