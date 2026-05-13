@@ -20,6 +20,6 @@ jobs:
             "msgtype": "markdown",
             "markdown": {
               "title": "Upptime Alert",
-              "text": "## 🚨 Upptime 监控告警\n请查看 GitHub Issues 获取详情"
+              "text": "## 🚨 Upptime 监控告警-test\n请查看 GitHub Issues 获取详情"
             }
           }'
