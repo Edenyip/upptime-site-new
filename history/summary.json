@@ -13,7 +13,7 @@
     "time": 787,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 798,
+    "timeMonth": 845,
     "timeYear": 787,
     "dailyMinutesDown": {}
   },
@@ -31,7 +31,7 @@
     "time": 1006,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 1060,
+    "timeMonth": 1015,
     "timeYear": 1006,
     "dailyMinutesDown": {
       "2026-08-04": 151,
@@ -53,7 +53,7 @@
     "time": 845,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 785,
+    "timeMonth": 847,
     "timeYear": 845,
     "dailyMinutesDown": {
       "2026-08-04": 146
@@ -65,15 +65,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.aquark.com.ico",
     "slug": "aquark-test",
     "status": "up",
-    "uptime": "99.08%",
+    "uptime": "99.09%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "99.08%",
+    "uptimeYear": "99.09%",
     "time": 2777,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 4379,
+    "timeMonth": 4387,
     "timeYear": 2777,
     "dailyMinutesDown": {
       "2026-08-04": 141,
@@ -98,7 +98,7 @@
     "time": 980,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 1167,
+    "timeMonth": 1339,
     "timeYear": 980,
     "dailyMinutesDown": {
       "2026-08-04": 136,
